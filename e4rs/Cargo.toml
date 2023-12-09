@@ -1,0 +1,18 @@
+[package]
+name = "e4rs"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "e4rs"
+path = "src/lib/lib.rs"
+crate-type = ["lib"]
+
+[[bin]]
+name = "e4rs_examples"
+path = "src/bin/main.rs"
+
+[dependencies]
+clap = { version = "4.4.10", features = ["derive"] }
+serde-xml-rs = "0.6.0"
+
